@@ -2,8 +2,9 @@ var crypto = require('crypto'),
   fs = require('fs'),
   User = require('../models/user.js'),
   Post = require('../models/post.js'),
-  Comment = require('../models/comment.js');
+  Comment = require('../models/comment.js'),
   Project = require('../models/project.js'),
+  Task = require('../models/task.js');
 
 module.exports = function(app) {
 
@@ -102,8 +103,33 @@ module.exports = function(app) {
       }
       res.redirect('/project/'+project._id+'');
     });
-    //创建项目的时候应该创建两个默认taskgroup
+
   });
+
+  //创建任务
+   app.get('/creatTask', function(req, res) {
+    res.render('creatTask', {
+      title: '注册'
+    });
+  });
+
+  app.post('/creatTask', function(req, res) {
+    var projectUser = req.session.user;
+        project = {
+          name: req.body.name
+        };
+        console.log(project);
+      var  defaultTask = new Task(projectUser.name);
+      console.log(defaultTask)
+       defaultTask.save(function (err,project){
+        if(err){
+          console.log("出错了");
+        }
+        res.redirect('/');
+      });
+
+  });
+
 
   //删除项目
   app.get('/remove/:id', checkLogin);

@@ -24,7 +24,8 @@ app.use(flash());
 app.use(express.favicon(__dirname + '/public/images/favicon.ico'));
 app.use(express.logger('dev'));
 app.use(express.logger({stream: accessLog}));
-app.use(express.bodyParser({ keepExtensions: true, uploadDir: './public/images' }));
+app.use(express.urlencoded({ keepExtensions: true, uploadDir: './public/images' }));
+app.use(express.json());
 app.use(express.methodOverride());
 app.use(express.cookieParser());
 app.use(express.session({

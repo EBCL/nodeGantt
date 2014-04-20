@@ -26,7 +26,7 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-right navUserName" >
         <% if (user) { %>
         <li><a href="/u/<%= user.name %>"><%= user.name %></a></li>
         <li><a title="登出" href="/logout">退出</a></li>
