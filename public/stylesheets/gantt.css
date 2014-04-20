@@ -262,7 +262,7 @@ cursor: e-resize;
 .bgGridBox{}
 
 .collapse_arrow{
-     background: url("images/collapse_arrow_right_dark.png");
+     background: url("../images/collapse_arrow_right_dark.png");
     width: 10px;
     
      height: 10px;
@@ -278,7 +278,7 @@ cursor: e-resize;
 }
 
 .collapse_arrow[aractive="active"]{
-    background: url("images/collapse_arrow_down_dark.png");
+    background: url("../images/collapse_arrow_down_dark.png");
      
     width: 10px;
      height: 11px;
