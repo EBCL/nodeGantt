@@ -1,8 +1,18 @@
 <%- include header %>
 <div class="container">
-  <h1>My Projects</h1>
-  <a  href="/creatProject">
+  <div class="myProjectTitle">
+  <h1 class="pull-left">My Projects</h1>
+  <a  href="/creatProject"  class="addProject"  >
     <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">+新增项目</button>
   </a>
+  </div>
+<div>
+  <% projects.forEach(function (project,index){ %>
+  <p class="bg-info">
+		<a href="project/<%= project._id %>">	<%= project.name %> </a>
+		<a href="remove/<%= project._id %>"> 删除</a>
+	</p>
+	<% }) %>
+  </div>
 </div>
   <%- include footer %>

@@ -1,0 +1,332 @@
+/*全局样式部分*/
+body{
+    font-family: "微软雅黑";
+    cursor: default;
+    -webkit-user-select: none;
+    overflow: hidden;
+}
+
+/*gantt拖动测试样式*/
+.myDD{
+    width: 120px;
+    height: 20px;
+    border: solid 1px #333;
+    background: red;
+    position: absolute;
+    left: 490px;
+    top: 193px;
+    z-index: 4;
+}
+
+.myll{
+    width: 4px;
+height: 24px;
+background: #333333;
+position: absolute;
+
+    left: 489px;
+
+    top: 192px;
+cursor: e-resize;
+    z-index: 5;
+}
+
+.myoii{
+    width: 4px;
+height: 24px;
+background: #333333;
+position: absolute;
+
+    left: 609px;
+
+    top: 192px;
+cursor: e-resize;
+
+    z-index: 5;
+}
+
+.wrapBox{
+
+    width: 700px;
+    height: 700px;
+    border: solid 1px #333;
+}
+
+.gridlineBox{
+    position: absolute;
+    width: auto;
+    height: 100%;
+    margin-top: 0px;
+}
+
+.gridx{
+    height: 24px;
+    width: 1204px;
+    position: relative;
+    z-index: 4;
+    opacity: 1;
+    left: 0;
+    top: 0;
+}
+.gridy{
+    border-right: solid 1px #ccc;
+
+    height: 100%;
+    position: absolute;
+    width: 22px;
+    z-index: 3;
+}
+
+/*日历控件测试样式*/
+
+.candlebox{
+
+    height: 36px;
+    
+    
+
+    width: 100%;
+
+    position: relative;
+
+}
+
+.candleTitle{
+    
+    width: 100%;
+}
+
+.oneMonthBox{
+
+    position: absolute;
+    
+
+    width: 100%;
+
+}
+
+.thisMonth{
+
+    height: 20px;
+    font-size: 13px;
+    border-bottom: solid 1px #999;
+    line-height: 20px;
+    
+
+    border-right: solid 1px #fff;
+
+    font-weight: bold;
+
+    text-indent: 8px;
+
+    color: #fff;
+
+}
+
+.thisMonthDate{
+    width: auto;
+
+}
+
+.dateList{
+    float: left;
+    
+    border-right: solid 1px #eee;
+    font-size: 12px;
+    height: 16px;
+    position: absolute;
+    width: 22px;
+    text-align: center;
+    color: #666;
+}
+
+.widthpp{
+    width: 30490px;
+    
+    height: 1px;
+}
+
+
+/*页面框架部分样式*/
+#gantt_wrap{
+    width: 100%;
+    height: 890px;
+    overflow: hidden;
+    margin-top: 60px;
+}
+#gantt_header{
+    width: 100%;
+    height: 36px;
+    background: #ccc;
+    overflow: hidden;
+    position: relative;
+}
+#gantt_chart{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+#task_list{
+    width: 189px;
+    border-right: solid 1px #E2E1E1;
+    height: 1000px;
+    position: relative;
+    background: #eee;
+    z-index: 4;
+    float: left;
+    overflow: hidden;
+}
+
+.project_name{
+    font-size: 21px;
+    height: 35px;
+    border-bottom: solid 1px #ccc;
+    line-height: 36px;
+    padding-left: 20px;
+}
+#project_target{
+    position: relative;
+    z-index: 97;
+    width: 100%;
+}
+.category_title{
+    padding-left: 10px;
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+    z-index: 9;
+}
+.group_target{}
+.task_title{
+    font-size: 12px;
+    padding-left: 20px;
+    height: 24px;
+    line-height: 20px;
+}
+
+#task_chart{
+    position: relative;
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+}
+
+.candlebgBox{
+    width: 190px;
+    
+    background: #ccc;
+    height: 36px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-right: solid 1px #fff;
+}
+/*横向滚动条盒子样式*/
+#scroll_container{
+    width: 1064px;
+    height: 15px;
+    background: #ccc;
+    position: fixed;
+    bottom: 0;
+    left: 210px;
+    cursor: default;
+    z-index: 9;
+}
+#scroll_bg{}
+#scroll_bar{
+    height: 11px;
+    width: 122px;
+    background: #666;
+    margin-top: 2px;
+    margin-left: 12px;
+    position: relative;
+    cursor: default;
+}
+#scroll_left{
+    width: 12px;
+    height: 12px;
+    background: #333;
+    position: relative;
+    margin-top: -12px;
+}
+#scroll_right{
+    width: 12px;  height: 12px;  background: #333;  position: relative;  margin-top: -12px;
+    margin-left: 1051px;
+}
+
+
+
+
+.bgGridBox{}
+
+.collapse_arrow{
+     background: url("images/collapse_arrow_right_dark.png");
+    width: 10px;
+    
+     height: 10px;
+    float: left;
+    
+     margin-top: 8px;
+     background-repeat: no-repeat;
+}
+
+.titleText{
+    float: left;
+    margin-left: 4px;
+}
+
+.collapse_arrow[aractive="active"]{
+    background: url("images/collapse_arrow_down_dark.png");
+     
+    width: 10px;
+     height: 11px;
+     
+    margin-top: 9px;
+    background-repeat: no-repeat;
+}
+
+.active{
+    background: #E2E1E1;
+}
+
+.task_div{
+    width: 120px;
+    
+    height: 16px;
+    background: rgb(198, 219, 247);
+    position: absolute;
+    left: 391px;
+    border: solid 1px rgb(113, 154, 206);
+    border-radius: 4px;
+    margin-top: 3px;
+}
+
+.project_chart{
+    position: relative;
+    
+    width: 100%;
+    height: 100%;
+}
+
+.active .drawLeft{
+    left: 513px;
+
+    border-right: solid 1px #999;
+}
+
+.active .drawRight{
+    left: 577px;
+
+    border-left: solid 1px #999;
+}
+
+.active .drawLine{
+    width: 4px;
+    cursor: e-resize;
+    height: 12px;
+    position: absolute;
+    z-index: 9;
+    margin-top: 6px;
+}

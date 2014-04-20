@@ -1,1 +1,12 @@
 .container{margin-top: 80px;}
+.addProject{
+    margin-top: 21px;
+	
+    display: block;
+    margin-left: 35px;
+    float: left;
+}
+
+.myProjectTitle{
+	height: 200px;
+}
